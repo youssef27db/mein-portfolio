@@ -1,0 +1,269 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Youssef Daoudi El Boukhrissi — Portfolio</title>
+  <meta name="description" content="Portfolio von Youssef Daoudi El Boukhrissi — Informatikstudent, Machine Learning & Softwareentwicklung." />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Haupt-CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-wrapper">
+
+    <!-- HEADER -->
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="#hero" aria-label="Startseite">
+          <span class="logo">YD</span>
+          <span class="brand-text">Youssef Daoudi</span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav" aria-label="Hauptnavigation">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="#hero">Home</a></li>
+            <li><a class="nav-link" href="#about">Über mich</a></li>
+            <li><a class="nav-link" href="#skills">Fähigkeiten</a></li>
+            <li><a class="nav-link" href="#projects">Projekte</a></li>
+            <li><a class="nav-link" href="#resume">Lebenslauf</a></li>
+            <li><a class="nav-link" href="#contact">Kontakt</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-controls">
+          <!-- Dark Mode Toggle -->
+          <button id="theme-toggle" class="theme-toggle" aria-label="Farbschema umschalten">🌙</button>
+
+          <!-- Hamburger für Mobile -->
+          <button id="hamburger" class="hamburger" aria-expanded="false" aria-controls="mobile-nav" aria-label="Navigation öffnen">
+            <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation (versteckt standardmäßig) -->
+      <nav id="mobile-nav" class="mobile-nav" aria-hidden="true" aria-label="Mobile Navigation">
+        <ul>
+          <li><a class="mobile-link" href="#hero">Home</a></li>
+          <li><a class="mobile-link" href="#about">Über mich</a></li>
+          <li><a class="mobile-link" href="#skills">Fähigkeiten</a></li>
+          <li><a class="mobile-link" href="#projects">Projekte</a></li>
+          <li><a class="mobile-link" href="#resume">Lebenslauf</a></li>
+          <li><a class="mobile-link" href="#contact">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+      <!-- HERO (Design angelehnt an Beispielbild) -->
+      <section id="hero" class="hero">
+        <div class="container hero-inner">
+
+          <!-- Textbereich -->
+          <div class="hero-left">
+            <p class="eyebrow">Hallo, ich bin</p>
+            <h1 class="hero-title">
+              Youssef <span class="accent">Daoudi El Boukhrissi</span><br>
+              <span class="hero-subtitle">Informatikstudent • angehender Softwareentwickler</span>
+            </h1>
+
+            <div class="hero-meta">
+              <span>Geboren: 02.07.2003 [Spanien, Roses]</span>
+            </div>
+
+            <p class="hero-lead">
+              Ich studiere Informatik an der Universität Heidelberg mit Fokus auf Machine Learning, Datenanalyse und Softwareentwicklung.
+              Ich entwickle praktische Lösungen — von Prototypen bis zu optimierten Software.
+            </p>
+
+            <div class="hero-ctas">
+              <a class="btn btn-secondary" href="#about">Mehr erfahren</a>
+              <a class="btn btn-primary" href="Lebenslauf_Youssef_Daoudi.pdf" download>Lebenslauf herunterladen</a>
+            </div>
+          </div>
+
+          <!-- Foto mit Ringen -->
+          <div class="hero-right" aria-hidden="false">
+            <div class="photo-outer">
+              <div class="photo-ring ring-3"></div>
+              <div class="photo-ring ring-2"></div>
+              <div class="photo-ring ring-1"></div>
+              <div class="photo-frame">
+                <!-- Bewerbungsfoto im gleichen Ordner -->
+                <img src="Bewerbungsfoto.jpeg" alt="Bewerbungsfoto Youssef Daoudi" class="photo-img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ÜBER MICH -->
+      <section id="about" class="section">
+        <div class="container">
+        <br></br>
+          <h2 class="section-title"><br>Über mich</br></h2>
+          <p class="section-lead">
+            Ich bin Youssef Daoudi El Boukhrissi, Informatikstudent (B.Sc.) an der Universität Heidelberg.
+            Meine Interessensschwerpunkte: Machine Learning, datengetriebene Systeme und Softwareentwicklung.
+          </p>
+
+          <div class="about-grid">
+            <div class="about-card">
+              <h3>Profil</h3>
+              <p>Neugieriger Problemlöser, analytisch und teamorientiert. Erfahrung in ML-Projekten und Softwareentwicklung.</p>
+            </div>
+
+            <div class="about-card">
+              <h3>Sprachen & Tools</h3>
+              <p>
+                Python, C++, C#, Java, SQL, TensorFlow, PyTorch, OpenCV, Pandas, Git, Docker, HTML/CSS/JS, Linux.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FÄHIGKEITEN -->
+      <section id="skills" class="section alt">
+        <div class="container">
+          <h2 class="section-title">Fähigkeiten</h2>
+          <p class="section-lead">
+            Kernkompetenzen, die ich im Rahmen meines Studiums, am Informatikgymnasium 
+            sowie durch praxisorientierte Projekte entwickelt habe.</p>
+
+          <div class="skills-grid">
+            <div class="skill">
+              <h4>Python / C++ / C# / Java</h4>
+              <div class="progress" data-skill="85"><div class="progress-bar"></div><span class="progress-value">85%</span></div>
+            </div>
+
+            <div class="skill">
+              <h4>Machine Learning & KI</h4>
+              <div class="progress" data-skill="70"><div class="progress-bar"></div><span class="progress-value">70%</span></div>
+            </div>
+
+            <div class="skill">
+              <h4>Datenanalyse & SQL</h4>
+              <div class="progress" data-skill="80"><div class="progress-bar"></div><span class="progress-value">80%</span></div>
+            </div>
+
+            <div class="skill">
+              <h4>Webentwicklung (HTML, CSS, JS)</h4>
+              <div class="progress" data-skill="60"><div class="progress-bar"></div><span class="progress-value">60%</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJEKTE -->
+      <section id="projects" class="section">
+        <div class="container">
+          <h2 class="section-title">Projekte</h2>
+          <p class="section-lead">Auszug und Kurzbeschreibung aus relevanten Projekten.</p>
+
+          <div class="projects-grid">
+            <article class="project">
+              <h3>Data-Driven Camera Calibration</h3>
+              <p class="muted">Python • C++ • OpenCV</p>
+              <p>Entwicklung datengetriebener Kalibrierungsverfahren für Light-Field Kameras zur automatisierten Rekalibrierung.</p>
+                <br></br>
+                <div class="resume-actions">
+                    <a class="btn btn-outline" href="https://github.com/youssef27db/Data-Driven-Camera-Calibration">GitHub Repository</a>
+                </div>
+            </article>
+
+            <article class="project">
+              <h3>Airbus Beluga™ ML Challenge</h3>
+              <p class="muted">Reinforcement Learning • PPO • Python • PyTorch</p>
+              <p>Implementierung eines hybriden PPO-Monte-Carlo-Agenten zur Lösung logistischer Routenprobleme.</p>
+                <br></br>
+                <div class="resume-actions">
+                    <a class="btn btn-outline" href="AirbusBelugaPraktikum.pdf" download>Airbus Nachweis (PDF)</a>
+                    <a class="btn btn-outline" href="https://github.com/youssef27db/FoPra-Beluga-Challenge">GitHub Repository</a>
+                </div>
+            </article>
+
+            <article class="project">
+              <h3>C# Game Development (Anfängerpraktikum)</h3>
+              <p class="muted">C# • SCRUM • OOP</p>
+              <p>Teamprojekt mit Fokus auf Architektur, Gameplay und agiler Zusammenarbeit.</p>
+                <br></br>
+                <div class="resume-actions">
+                    <a class="btn btn-outline" href="https://github.com/youssef27db/AgileGameDev-Praktikum">GitHub Repository</a>
+                </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- LEBENSLAUF -->
+      <section id="resume" class="section alt">
+        <div class="container">
+          <h2 class="section-title">Lebenslauf</h2>
+          <p class="section-lead">Chronologische Übersicht (Auszug). PDF zum Herunterladen steht bereit.</p>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <time>2022 – 2026</time>
+              <h4>B.Sc. Informatik – Universität Heidelberg</h4>
+              <p>Aktueller Schnitt: 2,5</p>
+            </div>
+
+            <div class="timeline-item">
+              <time>2019 – 2022</time>
+              <h4>Abitur – Friedrich-List-Schule</h4>
+              <p>Durchschnitt: 2,3</p>
+            </div>
+
+            <div class="timeline-item">
+              <time>2014 – 2019</time>
+              <h4>Mittlere Reife – Wiesbaden</h4>
+              <p>Durchschnitt: 2,0</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- KONTAKT -->
+      <section id="contact" class="section">
+        <div class="container contact-inner">
+          <div class="contact-card">
+            <h2 class="section-title">Kontakt</h2>
+            <ul class="contact-list contact-list--large">
+              <li><strong>E-Mail:</strong> <a href="mailto:youssefdaoudi275@gmail.com">youssefdaoudi275@gmail.com</a></li>
+              <li><strong>Telefon:</strong> <a href="tel:+4917632765165">0176 32765165</a></li>
+              <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/youssef-daoudi-el-boukhrissi-8aba88392/" target="_blank" rel="noopener">linkedin.com/in/youssef-daoudi-el-boukhrissi</a></li>
+              <li><strong>GitHub:</strong> <a href="https://github.com/youssef27db" target="_blank" rel="noopener">github.com/youssef27db</a></li>
+            </ul>
+            <p class="muted">Ich antworte in der Regel innerhalb drei Werktage.</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Youssef Daoudi El Boukhrissi</p>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/youssef-daoudi-el-boukhrissi-8aba88392/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/youssef27db" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -292,3 +292,31 @@ a:focus, button:focus, input:focus, textarea:focus{ outline: 3px solid rgba(0,20
 
 /* Ensure reveal elements are not visually hidden when printing */
 @media print{ .reveal{ opacity:1; transform:none; } }
+
+/* Kontaktbereich: Links nicht blau anzeigen */
+.contact-card a,
+.contact-list a,
+.contact-list--large a {
+  color: var(--text);
+  text-decoration: none;
+  transition: color 160ms var(--transition);
+}
+.contact-card a:hover,
+.contact-list a:hover,
+.contact-list--large a:hover,
+.contact-card a:focus {
+  color: var(--mint);
+  text-decoration: underline;
+}
+.contact-card a:visited,
+.contact-list a:visited,
+.contact-list--large a:visited {
+  color: var(--muted);
+}
+
+/* Dark mode: ensure contrast for contact links */
+[data-theme="dark"] .contact-card a,
+[data-theme="dark"] .contact-list a,
+[data-theme="dark"] .contact-list--large a {
+  color: var(--text);
+}

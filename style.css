@@ -1,10 +1,7 @@
-/* style.css */
-/* -------------------------------------------------------------
-   N26-inspirierter Look + Hero mit Rundem Foto + Dark Mode
-   -------------------------------------------------------------
-   Alle Kommentare und Texte auf Deutsch.
-*/
-
+/* ==========================
+   CSS Variablen & Basis Styles
+   ========================== */
+   
 /* Farbvariablen (Light theme) */
 :root{
   --mint: #00D1A2;

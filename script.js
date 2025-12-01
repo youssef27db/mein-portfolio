@@ -48,10 +48,19 @@ document.addEventListener('DOMContentLoaded', () => {
      -------------------------- */
   hamburger.addEventListener('click', () => {
     const open = mobileNav.getAttribute('aria-hidden') === 'false';
+    const nextOpen = !open;
     mobileNav.setAttribute('aria-hidden', String(!open));
     mobileNav.classList.toggle('open');
     const expanded = hamburger.getAttribute('aria-expanded') === 'true';
     hamburger.setAttribute('aria-expanded', String(!expanded));
+    // Prevent body scroll when mobile nav is open (improves mobile UX)
+    try{
+      if (nextOpen) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = '';
+      }
+    }catch(e){ /* fail silently on older browsers */ }
   });
 
   // Schließe Mobile Nav beim Klick auf Link
@@ -59,6 +68,8 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileNav.setAttribute('aria-hidden', 'true');
     mobileNav.classList.remove('open');
     hamburger.setAttribute('aria-expanded', 'false');
+    // Re-enable scrolling after closing mobile nav
+    try{ document.body.style.overflow = ''; }catch(e){}
   }));
 
   /* --------------------------
@@ -164,6 +175,7 @@ document.addEventListener('DOMContentLoaded', () => {
       mobileNav.setAttribute('aria-hidden', 'true');
       mobileNav.classList.remove('open');
       hamburger.setAttribute('aria-expanded', 'false');
+      try{ document.body.style.overflow = ''; }catch(e){}
     }
   });
 });

@@ -59,6 +59,8 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.style.overflow = 'hidden';
       } else {
         document.body.style.overflow = '';
+        // Ensure any horizontal scroll is reset when closing
+        window.scrollTo(0, window.pageYOffset || 0);
       }
     }catch(e){ /* fail silently on older browsers */ }
   });
@@ -68,8 +70,8 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileNav.setAttribute('aria-hidden', 'true');
     mobileNav.classList.remove('open');
     hamburger.setAttribute('aria-expanded', 'false');
-    // Re-enable scrolling after closing mobile nav
-    try{ document.body.style.overflow = ''; }catch(e){}
+    // Re-enable scrolling after closing mobile nav and reset horizontal scroll
+    try{ document.body.style.overflow = ''; window.scrollTo(0, window.pageYOffset || 0); }catch(e){}
   }));
 
   /* --------------------------
@@ -175,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
       mobileNav.setAttribute('aria-hidden', 'true');
       mobileNav.classList.remove('open');
       hamburger.setAttribute('aria-expanded', 'false');
-      try{ document.body.style.overflow = ''; }catch(e){}
+      try{ document.body.style.overflow = ''; window.scrollTo(0, window.pageYOffset || 0); }catch(e){}
     }
   });
 });

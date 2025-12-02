@@ -1,6 +1,6 @@
 # Mein Portfolio
 
-Kurzes persönliches Portfolio von Youssef Daoudi El Boukhrissi. Statische Website (HTML/CSS/JS).
+Kurzes persönliches Portfolio von Youssef Daoudi El Boukhrissi. Statische Website mit HTML/CSS/JS.
 
 **Inhalt**
 - **Projekt:** Portfolio Website

@@ -261,9 +261,8 @@ html[data-theme="dark"] body{
   .mobile-nav a{ color:var(--text); padding:0.75rem 0.5rem; display:block; font-weight:600; }
 
   /* Make hero photo responsive and not too large on phones */
-  .hero-right{ margin-top: 1.8rem; }
-  .photo-outer{ width: min(78vw, 380px); height: auto; margin: 0 auto; }
-  .photo-frame{ width: min(60vw, 320px); height: min(60vw, 320px); border-width:10px; box-shadow: 0 20px 40px rgba(2,10,8,0.14); }
+  .photo-outer{ width: min(80vw, 400px); height: auto; }
+  .photo-frame{ width: min(60vw, 320px); height: min(60vw, 320px); border-width:10px; }
   .photo-img{ width:100%; height:100%; }
 
   /* Tighter hero spacing on small screens */
@@ -289,10 +288,6 @@ html[data-theme="dark"] body{
   .brand-text{ display:none; }
   .logo{ padding:0.45rem 0.7rem; }
   .header-inner{ padding:0.5rem 0; }
-  /* On very small screens, reduce photo/frame and hide decorative rings to avoid overlap */
-  .photo-outer{ width: min(72vw, 300px); }
-  .photo-frame{ width: min(52vw, 260px); height: min(52vw, 260px); border-width:8px; }
-  .photo-ring{ display:none; }
 }
 
 /* Accessibility focus */

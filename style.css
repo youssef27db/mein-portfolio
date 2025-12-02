@@ -31,9 +31,7 @@
 
 /* Basis */
 *{ box-sizing: border-box; }
-html,body{ height:100%; }
-/* Prevent horizontal scrolling and limit touch to vertical panning on mobile */
-html, body { overflow-x: hidden; touch-action: pan-y; -webkit-overflow-scrolling: touch; }
+html,body{ height:100%;}
 body{
   margin:0;
   font-family: var(--font);

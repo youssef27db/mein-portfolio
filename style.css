@@ -41,6 +41,13 @@ body{
   -moz-osx-font-smoothing:grayscale;
 }
 
+/* Site wrapper to prevent horizontal scroll */
+.site-wrapper{
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
 /* Keep a gentle gradient for light theme only (avoids white wash in dark mode) */
 html[data-theme="light"] body{
   background: linear-gradient(180deg,var(--bg) 0%, rgba(255,255,255,0) 60%);
@@ -53,6 +60,7 @@ html[data-theme="dark"] body{
 .container{
   width: min(var(--container-width), 94%);
   margin: 0 auto;
+  max-width: 100%;
 }
 
 /* Header */
@@ -177,7 +185,7 @@ html[data-theme="dark"] body{
 .hero-meta{ margin-top:1rem; color:var(--muted); }
 
 /* Rechtes Panel (Foto mit Ringen) */
-.hero-right{ display:flex; justify-content:center; align-items:center; }
+.hero-right{ display:flex; justify-content:center; align-items:center; max-width: 100%; overflow: visible; }
 .photo-outer{ position:relative; width:460px; height:460px; display:flex; align-items:center; justify-content:center; margin:auto; }
 .photo-frame{
   position:relative; width:340px; height:340px; border-radius:50%; overflow:hidden; box-shadow:0 28px 56px rgba(2,10,8,0.16); background:var(--surface); border: 12px solid rgba(255,255,255,0.35);
@@ -262,9 +270,14 @@ html[data-theme="dark"] body{
   .mobile-nav a{ color:var(--text); padding:0.75rem 0.5rem; display:block; font-weight:600; }
 
   /* Make hero photo responsive and not too large on phones */
-  .photo-outer{ width: min(80vw, 400px); height: auto; }
-  .photo-frame{ width: min(60vw, 320px); height: min(60vw, 320px); border-width:10px; }
+  .photo-outer{ width: min(80vw, 400px); height: auto; max-width: 90vw; }
+  .photo-frame{ width: min(60vw, 320px); height: min(60vw, 320px); border-width:10px; max-width: 70vw; max-height: 70vw; }
   .photo-img{ width:100%; height:100%; }
+  
+  /* Scale rings to fit within viewport on mobile */
+  .ring-1{ width: min(380px, 75vw); height: min(380px, 75vw); }
+  .ring-2{ width: min(420px, 82vw); height: min(420px, 82vw); }
+  .ring-3{ width: min(480px, 90vw); height: min(480px, 90vw); }
 
   /* Tighter hero spacing on small screens */
   .hero{ padding: 2.2rem 0 3rem; }
